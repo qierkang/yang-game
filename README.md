@@ -13,7 +13,15 @@
 <font face="微软雅黑" size=2 color=#A9A9A9 >版权声明：内容供内部学习使用，请勿外传！转载请附上作者信息</font>
 </p>
 
-#### 后台服务源码地址：https://gitee.com/qierkang/yang-service
+## [在线体验](http://qekang.com/yang)
+
+### [前端源码](https://gitee.com/qierkang/yang-game)
+
+### [服务端源码](https://gitee.com/qierkang/yang-service)
+
+### [gitee传送门](https://gitee.com/qierkang/yang-game)
+
+### [github传送门](https://github.com/qierkang/yang-game)
 
 ## 开发环境
 
