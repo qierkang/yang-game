@@ -7889,12 +7889,12 @@ window.__require = function t(e, o, n) {
             },
             online: {
                 evn: n.ENV.online,
-                host: "http://127.0.0.1:8080",
+                host: "http://139.196.92.142:8080",
                 reportPrefix: "sheep_"
             },
             onlineWx: {
                 evn: n.ENV.onlineWx,
-                host: "http://127.0.0.1:8080",
+                host: "http://139.196.92.142:8080",
                 reportPrefix: "sheep_wx_"
             },
             leiTing: {
@@ -7904,12 +7904,12 @@ window.__require = function t(e, o, n) {
             },
             onlineOppo: {
                 evn: n.ENV.onlineOppo,
-                host: "http://127.0.0.1:8080",
+                host: "http://139.196.92.142:8080",
                 reportPrefix: "sheep_oppo_"
             },
             onlineVivo: {
                 evn: n.ENV.onlineVivo,
-                host: "http://127.0.0.1:8080",
+                host: "http://139.196.92.142:8080",
                 reportPrefix: "sheep_vivo_"
             }
         };
