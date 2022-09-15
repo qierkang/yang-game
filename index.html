@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Yang | Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>尔康的博客</title>
+    <meta charset="utf-8"/>
+    <meta name="csdn-baidu-search" content="戚尔康的博客-薯条的博客-尔康博客-xyqierkang-xyqierkang@163.com-383888666-qierkang- CSDN博客">
+    <meta name="description"
+          content="戚尔康的博客-薯条的博客-尔康博客-xyqierkang-xyqierkang@163.com-383888666-qierkang-是一名计算机软件行业的博主,他一直在热衷于分享后台技术栈,服务器领域的技术知识。他主要关注安全架构方面的内容。">
+    <meta name="keywords" content="qierkang,shutiao,erkang,xyqierkang@163.com"/>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content=""/>
+    <meta name="x5-orientation" content="">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="stylesheet" type="text/css" href="style-mobile.6e9cd.css"/>
+    <link rel="icon" href="favicon.8de18.ico"/>
+</head>
+<body>
+<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+<div id="splash">
+    <div class="progress-bar stripes">
+        <span style="width: 0%"></span>
+    </div>
+</div>
+
+<script src="src/settings.4b50e.js" charset="utf-8"></script>
+
+<script src="main.2129d.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    (function () {
+        // open web debugger console
+        if (typeof VConsole !== 'undefined') {
+            window.vConsole = new VConsole();
+        }
+
+        var debug = window._CCSettings.debug;
+        var splash = document.getElementById('splash');
+        splash.style.display = 'block';
+
+        function loadScript(moduleName, cb) {
+            function scriptLoaded() {
+                document.body.removeChild(domScript);
+                domScript.removeEventListener('load', scriptLoaded, false);
+                cb && cb();
+            };
+            var domScript = document.createElement('script');
+            domScript.async = true;
+            domScript.src = moduleName;
+            domScript.addEventListener('load', scriptLoaded, false);
+            document.body.appendChild(domScript);
+        }
+
+        loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.c7c6e.js', function () {
+            if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+                loadScript(debug ? 'physics.js' : 'physics-min.ce5ee.js', window.boot);
+            } else {
+                window.boot();
+            }
+        });
+    })();
+</script>
+
+<script>
+console.log("专属标签🏷\n" +
+        "  _                     \n" +
+        " | |                    \n" +
+        " | | ____ _ _ __   __ _ \n" +
+        " | |/ / _` | '_ \\ / _` |\n" +
+        " |   《 (_| | | | | (_| |\n" +
+        " |_|\\_\\__,_|_| |_|\\__, |\n" +
+        "                   __/ |\n" +
+        "                  |___/ \n\n\n" +
+        "☻✎﹏﹏薯条：你找到我了  \n" +
+        "Blog https://www.qekang.com    \n\n" +
+        "GitHub https://github.com/qierkang \n\n" +
+        "CSDN https://blog.csdn.net/qierkang \n\n\n"
+    );
+    console.log(
+        "                                            < Hi, 我是牛哥❤❥吃不吃KFC? >\n" +
+        "                                             ---------------------\n" +
+        "                                                    \\   ^__^\n" +
+        "                                                     \\  (oo)\\_______\n" +
+        "                                                        (__)\\       )\\/\\\n" +
+        "                                                            ||----w |\n" +
+        "                                                            ||     ||");
+
+    console.log("\n" +
+        " .----------------. \n" +
+        "| .--------------. |\n" +
+        "| |  ____  ____  | |\n" +
+        "| | |_  _||_  _| | |\n" +
+        "| |   \\ \\  / /   | |\n" +
+        "| |    \\ \\/ /    | |\n" +
+        "| |    _|  |_    | |\n" +
+        "| |   |______|   | |\n" +
+        "| |              | |\n" +
+        "| '--------------' |\n" +
+        " '----------------' \n");
+</script>
+
+</body>
+</html>
